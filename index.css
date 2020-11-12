@@ -1,50 +1,151 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+html {
+  background-color: rgb(29, 30, 32);
+}
+
+html,
 body {
-  background-color: rgb(216, 202, 202);
-  color: rgb(220, 220, 220);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: 'Combo', cursive;
+  max-width: 600px;
+  margin: auto;
+  color: rgb(223, 218, 213);
+}
+
+body {
+  background-color: rgba(83, 93, 116, 0.13);
+  border: 1px solid rgba(80, 70, 70, 0.726);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.623);
+  padding: 20px;
+  margin: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: 'Chewy', cursive;
 }
 
 h1 {
-  color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-img {
+h2 {
+  transition-duration: 500ms;
+}
+
+h2:hover {
+  transform: scale(1.4);
+  translate: 100px;
+  transition-duration: 900ms;
+}
+
+.image-box {
+  background-color: goldenrod;
+  padding: 5px;
   border-radius: 100%;
-  border: 1px solid white;
-  margin: 20px;
+  transform: scale(0.8);
+  transition: ease-in-out;
+  transition-duration: 700ms;
 }
-
-p {
-  max-width: 400px;
-  margin: auto;
+.image-box:hover {
+  background-color: rgba(236, 229, 229, 0);
+  transform: scale(1);
+  border-radius: 4%;
+  rotate: 90deg;
+  padding: 0px;
+  transition: ease-in-out;
+  transition-duration: 600ms;
 }
-
-p:hover {
-  color: red;
-  font-weight: bold;
-  text-align: justify;
+img {
+  max-width: 100%;
+  border-radius: 100%;
+  transition: ease-in-out;
+  transition-duration: 700ms;
+  box-shadow: 0px 0px 5px rgba(17, 17, 17, 0.884);
 }
-
 img:hover {
-  transform: scale(1.03);
-  border-radius: 10px;
-  /* transform: skewX(5deg); */
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
+  rotate: -90deg;
+  border-radius: 4%;
+  transition: ease-in-out;
+  transition-duration: 600ms;
+  border: solid 2px goldenrod;
 }
 
-main {
-  border-radius: 10px;
-  background-color: rgb(52, 43, 43);
-  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.2);
+a {
+  color: white;
 }
 
-li:hover {
-  transform: translateX(150px) scale(2);
-  transition-duration: 0.5s;
+table {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+}
+tbody {
+  border: 1px solid rgb(186, 185, 184);
+  border-radius: 5%;
+}
+th {
+  border: 1.5px solid rgb(186, 185, 184);
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+}
+th,
+td {
+  width: 100px;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@keyframes left {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -5px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes right {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.anim-left:hover {
+  position: relative;
+  animation-name: left;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.anim-right:hover {
+  position: relative;
+  animation-name: right;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }

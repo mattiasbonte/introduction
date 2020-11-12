@@ -1,78 +1,125 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
-  <!-- HEAD -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>HTML & CSS introduction</title>
-
-    <!-- #01 STYLING WITH STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="index.css" />
-
-    <!-- #02 STYLING INSIDE HTML -->
-    <style>
-      /* ... */
-    </style>
+    <title>Mattias Bonte</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
-  <!-- BODY -->
   <body>
-    <!-- HEADER -->
-    <header>
-      <h1>HTML & CSS Introduction</h1>
-    </header>
+    <h1>Mattias Bonte</h1>
+    <blockquote cite="https://wisecoding.github.io/">
+      "We don't understand what we can't feel"
+    </blockquote>
 
-    <!-- MAIN -->
-    <main>
-      <section>
-        <!-- IMAGE -->
-        <img
-          src="http://lorempixel.com/640/480/animals"
-          alt="Animal"
-          title="Animal"
-        />
+    <div class="image-box">
+      <div class="bg-box"></div>
+      <img
+        src="https://raw.githubusercontent.com/mattiasbonte/markdown-warmup-css/master/me.jpg"
+        alt="Portrait picture Mattias"
+      />
+    </div>
 
-        <!-- PARAGRAPH -->
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          officiis laborum voluptas quia beatae! Fuga, voluptatibus at sunt ex
-          ullam doloribus. Cupiditate possimus autem laborum porro odio,
-          reiciendis voluptatem at! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Aut, inventore itaque modi pariatur corrupti
-          voluptas ducimus odit, animi cum perspiciatis ipsa error quibusdam
-          eveniet consequatur maxime quis, voluptates velit suscipit. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Aliquam minima
-          iste doloribus nisi, maxime exercitationem dolorum cumque reiciendis
-          voluptatem veniam! Mollitia fugit harum odit eveniet quam quaerat rem
-          nisi fuga?
-        </p>
+    <br />
 
-        <!-- ORDERED LIST -->
-        <h3>Ordered List</h3>
+    <h2>Me, in one sentence</h2>
+    <p>Strong minded 🧠 human who is trying to live life from the heart 💕</p>
+
+    <br />
+
+    <table>
+      <tr>
+        <th>Birthday 🎁</th>
+        <th>Favorite 🎨</th>
+        <th>Favorite 🍴</th>
+        <th>Pineapple 🍕</th>
+      </tr>
+      <tr>
+        <td>15/03</td>
+        <td>BLUE</td>
+        <td>MANGO</td>
+        <td>
+          <dl>
+            <dt><input type="checkbox" checked />YES</dt>
+            <dt><input type="checkbox" />NO</dt>
+          </dl>
+        </td>
+      </tr>
+    </table>
+
+    <br />
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Boarding</li>
+      <ul>
+        <li>Kitesurf 🏄🏼‍♂️</li>
+        <li>Onewheel 🛹</li>
+        <li>Snowboard 🏂</li>
+      </ul>
+
+      <li>
+        Sport
         <ul>
-          <li>Apple 🍎</li>
-          <li>Banana 🍌</li>
-          <li>Melon 🍉</li>
+          <li>Run 🏃🏼‍♂️</li>
+          <li>Cycle 🚲</li>
+          <li>Swim 🏊🏼‍♂️</li>
+          <li>Gaming 🕹</li>
         </ul>
+      </li>
 
-        <!-- UNORDERED LIST -->
-        <h3>Unordered List</h3>
-        <ol>
-          <li>Car 🚗</li>
-          <li>Boat 🚤</li>
-          <li>Bike 🏍</li>
-        </ol>
-      </section>
-    </main>
+      <li>Presence</li>
+      <ul>
+        <li>Wandering Nature 🌍</li>
+        <li>Pondering life 💭</li>
+      </ul>
+    </ul>
 
-    <!-- FOOTER -->
+    <br />
+
+    <h2>You can always count on me when..</h2>
+    <ul>
+      <li>Feeling overwhelmed, emotional trouble 😰</li>
+      <li>Summary of a certain lesson is needed 📝</li>
+      <li>Having technical issues 🤓</li>
+    </ul>
+
+    <br />
+
+    <h2>Funny story</h2>
+    <p>
+      I once jumped with my face against a basketball ring :basketball: while in
+      a trampoline park with a lot of small kids. I just hope their nightmares
+      have faded by now. My whole face was bleeding and I had to get stitches.
+      Also my humour can be strange? 🤔
+    </p>
+
+    <h3>TL;DR</h3>
+    <p>Don't go to a trampoline park with me. 🤣</p>
+
+    <br />
+
     <footer>
-      <span>About</span>
-      <span>Shop</span>
-      <span>Contact</span>
-      <span>...</span>
+      <p>
+        <div  class="anim-left">
+        ⬅️
+        <a
+
+          href="https://driesdd.github.io/markdown-warmup-css/"
+          title="Link to Dries' About"
+          >Dries</a
+        >
+        &nbsp;
+        </div>
+        - Mattias -
+        <div class="anim-right">&nbsp;
+        <a
+          href="https://erasuratya.github.io/markdown-warmup-css/"
+          title="Link to Mausam's About"
+          >Mausam</a
+        >
+        ➡️
+        </div>
+      </p>
     </footer>
   </body>
 </html>
