@@ -6,7 +6,7 @@
 | ---------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------- |
 | [HTML/CSS](https://github.com/becodeorg/Workshop-BeCode-antwerp) | [ABOUT](https://driesdd.github.io/markdown-warmup-css/) | [ABOUT](https://mattiasbonte.github.io/markdown-warmup-css/) | [INTRO](https://github.com/mattiasbonte/introduction) |
 
-## planning
+## Timetable
 
 | Time      |      |
 | :------------- | :----------: |
